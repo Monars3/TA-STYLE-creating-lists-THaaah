@@ -10,14 +10,27 @@
 <body>
     <header class="header">
         <div class="container flex">
-            <h1>ELEVATION</h1>
+            <a class="brand" href="#">ELEVATION</a>
             <nav>
-                <a href="#">HOME</a>
-                <a href="#">
-                <ion-icon class="down-arrow" name="chevron-down-outline"></ion-icon>
-                PAGE LAYOUTS
-            </a>
-            <a href="#">ELEMENTS</a>
+                <ul class="flex">
+                    <li><a href="#">HOME</a></li>
+                    <li class="submenu-box">
+                        <a href="#">
+                            <ion-icon class="down-arrow" name="chevron-down-outline"></ion-icon>
+                            PAGE LAYOUTS
+                        </a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="#">Left Sidebar</a></li>
+                                <li><a href="#">Right Sidebar</a></li>
+                                <li><a href="#">No Sidebar</a></li>
+                                <li><a href="#">Left Submenu</a></li>
+                            </ul>
+                            <ion-icon class="fas" name="caret-up"></ion-icon>
+                        </div>
+                    </li>
+                    <li><a href="#">ELEMENTS</a></li>
+                </ul>
             </nav>
         </div>
         <div class="sub-heading">
@@ -28,7 +41,19 @@
     </header>
     <main>
         <section class="second-header">
-            <h3>MAGNA FEUGIAT</h3>
+            <div class="flex justify-center">
+                <div class="line-container">
+                    <div class="line line1"></div>
+                    <div class="line line2 "></div>
+                    <div class="line line3"></div>
+                </div>
+                <h3>MAGNA FEUGIAT</h3>
+                <div class="line-container align-start">
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
+                    <div class="line line3"></div>
+                </div>
+            </div>
             <p class="text">Aliquet ante lobortis non semper gravida. Accumsan faucibus praesent ante aliquet amet posuere ac cubilia. Eu faucibus mi neque adipiscing mi lorem. Semper blandit. Amet adipiscing interdum.</p>
             <div class="flex container-one">
                 <div class="col-1-3">
@@ -107,7 +132,7 @@
                     <nav class="parent-form">
                         <form action="">
                             <input type="text" placeholder="Name">
-                            <input class="Email"type="text" placeholder="Email">
+                            <input class="Email" type="text" placeholder="Email">
                             <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
                         </form>
                         <div class="btn-form">
@@ -116,7 +141,7 @@
                         </div>
                     </nav>
                     <div class="address-bar">
-                            <a class="align" href="#">
+                            <a class="align-inline" href="#">
                                 <ion-icon class="abc" name="location"></ion-icon>
                                 <span>Untitled Corporation 1234 <br> Somewhere Rd. Suite 5432 <br> Nashville, TN 00000-0000</span>
                             </a>
